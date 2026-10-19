@@ -4,7 +4,7 @@ WATER_ML_PER_KG = 30
 
 # Узнаем имя и возраст пользователя
 user_name = input('Как тебя зовут? ')
-print('\nПриветствую,', user_name.title(), end=", ")
+print('\nПриветствую,', user_name.title(), end=', ')
 user_age = int(input('сколько Вам полных лет? '))
 
 # Узнаем вес и рост пользователя
@@ -15,10 +15,11 @@ user_height = float(input('Укажите свой рост в м (Наприм�
 bmi = round(user_weight / (user_height ** 2), 1)
 
 # Расчет нормы воды и перевод в литры.
-water_l = round(((user_weight * WATER_ML_PER_KG) / 1000), 1)
+water_l = round((user_weight * WATER_ML_PER_KG) / 1000, 1)
 
 # Вывод результатов
-print(f'\nПоздравляю, {user_name.title()} , отчёт готов:')
+print(f'\nПоздравляю, {user_name.title()}', end=', ')
+print('отчёт готов:')
 print(f'-Ваш возраст: {user_age} г.')
 print(f'-Индекс Массы Тела: {bmi}')
 print(f'-Рекомендуемая норма воды: {water_l} л. в день\n')
