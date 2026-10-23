@@ -45,7 +45,7 @@ bmi = round(user_weight / (user_height ** 2), 1)
 water_l = round(user_weight * WATER_ML_PER_KG / ML_PER_LITER, 1)
 
 # Вывод результатов
-print(f'\nПоздравляю, отчёт готов:')
+print('\nПоздравляю, отчёт готов:')
 print(f'-Ваш возраст: {user_age} г.')
 print(f'-Индекс Массы Тела: {bmi}')
 print(f'-Рекомендуемая норма воды: {water_l} л. в день\n')
